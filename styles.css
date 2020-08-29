@@ -1,5 +1,6 @@
 body {
     background: #393b44;
+    font-family: 'Alata', sans-serif;
 }
 
 
@@ -12,6 +13,7 @@ body {
     height: 200px;
     /* perspective CSS property determines the distance between the z=0 and the user */
     perspective: 600px;
+    
 }
 
 .cube {
@@ -26,11 +28,15 @@ body {
     position: absolute;
     width: 200px;
     height: 200px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 20px;
+    color: white;
 }
 
 .front {
-    background: hsla(0, 100%, 50%, 0.7);
     transform: rotateY(0deg) translateZ(100px);;
+    background: hsla(0, 100%, 50%, 0.7);
 }
 
 .back {
@@ -57,3 +63,10 @@ body {
     transform: rotateX(-90deg) translateZ(100px);;
     background: hsla(300, 100%, 50%, 0.7);
 }
+
+.cube.show-front  { transform: translateZ(-100px) rotateY(   0deg); }
+.cube.show-right  { transform: translateZ(-100px) rotateY( -90deg); }
+.cube.show-back   { transform: translateZ(-100px) rotateY(-180deg); }
+.cube.show-left   { transform: translateZ(-100px) rotateY(  90deg); }
+.cube.show-top    { transform: translateZ(-100px) rotateX( -90deg); }
+.cube.show-bottom { transform: translateZ(-100px) rotateX(  90deg); }
