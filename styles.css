@@ -3,6 +3,7 @@
     height: 200px;
     /* perspective CSS property determines the distance between the z=0 and the user */
     perspective: 600px;
+    margin: 80px;
 }
 
 .cube {
@@ -18,15 +19,32 @@
     height: 200px;
 }
 
-.front {background: red}
-.back {background: green}
-.right {background: blue}
-.left {background: salmon}
-.top {background: purple}
-.bottom {background: gold}
+.front {
+    background: hsla(0, 100%, 50%, 0.7);
+    transform: rotateY(0deg) translateZ(100px);;
+}
 
-/* .cube-face {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-} */
+.back {
+    transform: rotateY( 90deg) translateZ(100px);;
+    background: hsla(60, 100%, 50%, 0.7);
+}
+
+.right {
+    transform: rotateY(180deg) translateZ(100px);;
+    background: hsla(120, 100%, 50%, 0.7);
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(100px);;
+    background: hsla(180, 100%, 50%, 0.7);
+}
+
+.top {
+    transform: rotateX( 90deg) translateZ(100px);;
+    background: hsla(240, 100%, 50%, 0.7);
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(100px);;
+    background: hsla(300, 100%, 50%, 0.7);
+}
