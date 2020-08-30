@@ -79,11 +79,23 @@ body {
 }
 
 input{
-    visibility: hidden;
+    display: none;
     pointer-events: none;
+}
+
+label {
+    display: inline-block;
+    width: 70px;
+    margin-right: 5px;
 }
 
 label:hover {
     cursor: pointer;
 }
 
+.lbl-front:hover {color: hsla(0, 100%, 50%, 0.7)}
+.lbl-back:hover {color: hsla(60, 100%, 50%, 0.7);}
+.lbl-right:hover {color: hsla(120, 100%, 50%, 0.7)}
+.lbl-left:hover {color: hsla(180, 100%, 50%, 0.7)}
+.lbl-top:hover {color: hsla(240, 100%, 50%, 0.7)}
+.lbl-bottom:hover {color: hsla(300, 100%, 50%, 0.7)}
