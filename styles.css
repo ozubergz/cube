@@ -73,6 +73,17 @@ body {
 }
 
 #radio-group {
+    margin-top: 100px;
+    text-align: center;
     color: white;
+}
+
+input{
+    visibility: hidden;
+    pointer-events: none;
+}
+
+label:hover {
+    cursor: pointer;
 }
 
